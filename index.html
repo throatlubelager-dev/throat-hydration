@@ -23,8 +23,8 @@
         .benefit-item:nth-child(3n) { border-right: none; }
         .benefit-item h4 { text-transform: uppercase; font-size: 13px; margin-bottom: 12px; color: var(--black); font-weight: 900; }
         .quote-section { padding: 80px 60px; background: #fdfcfb; text-align: left; max-width: 1100px; margin: 0 auto; display: flex; border-bottom: 1px solid #eee; }
-        .quote-text { flex: 1.2; padding-right: 60px; font-size: 19px; line-height: 1.6; font-style: italic; color: #444; border-right: 1px solid #eee; }
-        .stats-area { flex: 0.8; padding-left: 60px; display: flex; flex-direction: column; justify-content: center; }
+        .quote-text { flex: 1.5; padding-right: 60px; font-size: 18px; line-height: 1.8; color: #444; border-right: 1px solid #eee; }
+        .stats-area { flex: 0.5; padding-left: 60px; display: flex; flex-direction: column; justify-content: center; }
         .stat-block { margin-bottom: 40px; text-align: center; }
         .stat-val { font-size: 48px; font-weight: 900; color: var(--gold); display: block; line-height: 1; }
         .stat-lab { font-size: 11px; text-transform: uppercase; color: #999; letter-spacing: 2px; font-weight: bold; margin-top: 5px; display: block; }
@@ -34,7 +34,7 @@
         .banner-cta { flex: 0.8; background: #faf8f5; padding: 80px 60px; display: flex; flex-direction: column; justify-content: center; align-items: center; }
         .cta-btn-final { border: 2px solid var(--black); padding: 20px 40px; text-decoration: none; color: var(--black); font-weight: 900; font-size: 16px; text-transform: uppercase; letter-spacing: 1px; }
         .footer-small { padding: 60px; font-size: 11px; text-transform: uppercase; color: #aaa; text-align: center; letter-spacing: 2px; }
-        @media (max-width: 800px) { .main-container, .quote-section, .black-footer-banner { flex-direction: column; } .benefit-item { border-right: none; } .benefits-grid { grid-template-columns: 1fr; } }
+        @media (max-width: 800px) { .main-container, .quote-section, .black-footer-banner { flex-direction: column; } .benefit-item { border-right: none; } .benefits-grid { grid-template-columns: 1fr; } .quote-text { border-right: none; padding-right: 0; } }
     </style>
 </head>
 <body>
@@ -46,7 +46,7 @@
         <div class="content-left">
             <span class="badge">COMMUNITY FUNDED &bull; INDEPENDENT</span>
             <h2>BECOME A <br><span class="gold-text">BELUBER.</span></h2>
-            <p>We're reclaiming the local tap with a premium 5% lager that doesn't take itself too seriously, but takes quality dead seriously.</p>
+            <p>We're reclaiming the local tap with a premium 5% lager that doesn't take itself too seriously, but takes quality dead seriously. This isn't just a beer; it's a stake in the next chapter of Toronto's independent beverage scene.</p>
             <div class="benefits-grid">
                 <div class="benefit-item"><h4>01 FOUNDER'S CAP</h4>Limited-run marking you as one of the original 50.</div>
                 <div class="benefit-item"><h4>02 FOUNDER'S WALL</h4>Your name etched permanently in the story.</div>
@@ -67,24 +67,27 @@
     </div>
     <div class="quote-section">
         <div class="quote-text">
-            "It was a sweltering night in Toronto, summer 2025. The air was thick, and I said the words that would change everything: <strong>'I need some throat lube.'</strong><br><br>
-            Twenty years in Toronto hospitality taught me that the best nights start with a laugh and end with genuine connection. That’s Throat Hydration. We’re ready to bring a name that makes people smile and a mission to support the independent bars that make Toronto home."
-            <br><br>
+            <p style="font-style: italic; color: var(--gold); font-size: 22px; margin-top: 0;">"It was a sweltering night in Toronto, summer 2025. The air was thick, the humidity was hanging over the city, and I said the words that would change everything: <strong>'I need some throat lube.'</strong>"</p>
+            
+            <p>After twenty years in Toronto hospitality, I've seen it all. My career has been built on a <strong>"Spirit to Serve"</strong>—the belief that a genuine connection and a bit of humor can turn a regular night into something legendary. </p>
+
+            <p>That’s where Throat Hydration comes in. What started as a joke between friends is now a mission to build a premium craft lager that supports the independent bars and the people who make this city home. We aren't looking for corporate investors; we're looking for 50 founding <strong>Belubers</strong> to help us put this beer on the map.</p>
+            
             <span style="font-style: normal; font-weight: bold; color: var(--gold); font-size: 14px; text-transform: uppercase;">WAYNE MCAULAY — FOUNDER</span>
         </div>
         <div class="stats-area">
-            <div class="stat-block"><span class="stat-val">50</span><span class="stat-lab">TOTAL BELUBERS</span></div>
+            <div class="stat-block"><span class="stat-val">5%</span><span class="stat-lab">PREMIUM<br>CRAFT LAGER</span></div>
             <div class="stat-block"><span class="stat-val">$100</span><span class="stat-lab">ONE-TIME BUY-IN</span></div>
         </div>
     </div>
     <div class="black-footer-banner">
         <div class="banner-msg">
             <h2>DON'T WATCH.<br>OWN IT.</h2>
-            <p style="color: #666; font-size: 18px;">Every great Toronto bar has a story. This one starts with you.</p>
+            <p style="color: #666; font-size: 18px;">This is the foundation. Every great Toronto bar has a story. This one starts with you.</p>
         </div>
         <div class="banner-cta">
             <a href="https://www.spotfund.com/story/0000" class="cta-btn-final">SECURE YOUR SPOT →</a>
-            <p style="font-size: 10px; color: #999; margin-top: 20px;">$100 &bull; FOUNDING BELUBER &bull; TORONTO 2026</p>
+            <p style="font-size: 10px; color: #999; margin-top: 20px; font-weight: bold;">$100 &bull; FOUNDING BELUBER &bull; TORONTO 2026</p>
         </div>
     </div>
     <div class="footer-small">© 2026 THROAT HYDRATION INC. &bull; THROATHYDRATION.CA</div>
