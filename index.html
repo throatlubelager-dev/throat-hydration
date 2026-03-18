@@ -8,93 +8,55 @@
         :root { --gold: #c5a45d; --black: #0a0a0a; --off-white: #f5f2ed; --white: #ffffff; }
         body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; background-color: var(--off-white); color: #333; line-height: 1.6; }
         .announcement-bar { background: #b12a1d; color: white; padding: 12px; font-size: 13px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; text-align: center; }
-        .hero-section { background: var(--black); color: var(--gold); padding: 100px 20px; text-align: center; }
-        .hero-section h1 { font-size: 32px; font-weight: 300; max-width: 900px; margin: 0 auto; line-height: 1.4; color: #fff; }
+        .hero-section { background: var(--black); color: var(--gold); padding: 80px 20px; text-align: center; }
+        .hero-section h1 { font-size: 28px; font-weight: 300; max-width: 800px; margin: 0 auto; line-height: 1.4; color: #fff; }
         .hero-section h1 span { color: var(--gold); font-weight: bold; }
         .main-container { max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; background: var(--white); box-shadow: 0 20px 40px rgba(0,0,0,0.05); }
-        .content-left { flex: 1; padding: 60px; min-width: 320px; border-right: 1px solid #eee; }
-        .sidebar-right { flex: 0.4; padding: 60px; background: #faf8f5; min-width: 280px; text-align: center; display: flex; flex-direction: column; justify-content: space-between; }
+        .content-left { flex: 1; padding: 40px 60px; min-width: 320px; border-right: 1px solid #eee; }
+        .sidebar-right { flex: 0.4; padding: 60px; background: #faf8f5; min-width: 280px; text-align: center; }
         .badge { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #999; margin-bottom: 20px; display: block; font-weight: bold; }
-        h2 { font-size: 65px; line-height: 0.85; margin: 10px 0; font-weight: 900; letter-spacing: -2px; }
+        h2 { font-size: 55px; line-height: 0.85; margin: 10px 0; font-weight: 900; letter-spacing: -2px; }
         .gold-text { color: var(--gold); }
         .price-box { background: var(--gold); color: white; padding: 20px; font-weight: bold; text-decoration: none; display: block; border-radius: 4px; margin: 25px 0; font-size: 20px; }
-        .benefits-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid #eee; margin-top: 50px; }
-        .benefit-item { padding: 40px 20px; border-right: 1px solid #eee; border-bottom: 1px solid #eee; font-size: 12px; text-align: left; }
+        .benefits-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid #eee; margin-top: 40px; }
+        .benefit-item { padding: 30px 20px; border-right: 1px solid #eee; border-bottom: 1px solid #eee; font-size: 11px; text-align: left; }
         .benefit-item:nth-child(3n) { border-right: none; }
-        .benefit-item h4 { text-transform: uppercase; font-size: 13px; margin-bottom: 12px; color: var(--black); font-weight: 900; }
-        .quote-section { padding: 80px 60px; background: #fdfcfb; text-align: left; max-width: 1100px; margin: 0 auto; display: flex; border-bottom: 1px solid #eee; }
-        .quote-text { flex: 1.2; padding-right: 60px; font-size: 19px; line-height: 1.6; font-style: italic; color: #444; border-right: 1px solid #eee; }
-        .stats-area { flex: 0.8; padding-left: 60px; display: flex; flex-direction: column; justify-content: center; }
-        .stat-block { margin-bottom: 40px; text-align: center; }
-        .stat-val { font-size: 48px; font-weight: 900; color: var(--gold); display: block; line-height: 1; }
-        .stat-lab { font-size: 11px; text-transform: uppercase; color: #999; letter-spacing: 2px; font-weight: bold; margin-top: 5px; display: block; }
+        .benefit-item h4 { text-transform: uppercase; font-size: 12px; margin-bottom: 8px; color: var(--black); font-weight: 900; }
         .black-footer-banner { background: var(--black); color: white; max-width: 1100px; margin: 0 auto; display: flex; align-items: stretch; }
-        .banner-msg { flex: 1.2; padding: 80px 60px; }
-        .banner-msg h2 { font-size: 70px; color: white; margin: 0 0 10px 0; line-height: 0.9;}
-        .banner-cta { flex: 0.8; background: #faf8f5; padding: 80px 60px; display: flex; flex-direction: column; justify-content: center; align-items: center; }
-        .cta-btn-final { border: 2px solid var(--black); padding: 20px 40px; text-decoration: none; color: var(--black); font-weight: 900; font-size: 16px; text-transform: uppercase; letter-spacing: 1px; }
-        .footer-small { padding: 60px; font-size: 11px; text-transform: uppercase; color: #aaa; text-align: center; letter-spacing: 2px; }
-        @media (max-width: 800px) { .main-container, .quote-section, .black-footer-banner { flex-direction: column; } .benefit-item { border-right: none; } .benefits-grid { grid-template-columns: 1fr; } }
+        .banner-msg { flex: 1.2; padding: 60px; }
+        .banner-msg h2 { font-size: 60px; color: white; margin: 0; line-height: 0.9;}
+        .banner-cta { flex: 0.8; background: #faf8f5; padding: 60px; display: flex; flex-direction: column; justify-content: center; align-items: center; }
+        .cta-btn-final { border: 2px solid var(--black); padding: 15px 30px; text-decoration: none; color: var(--black); font-weight: 900; font-size: 14px; text-transform: uppercase; letter-spacing: 1px; }
+        .footer-small { padding: 40px; font-size: 10px; text-transform: uppercase; color: #aaa; text-align: center; letter-spacing: 2px; }
+        @media (max-width: 800px) { .main-container, .black-footer-banner { flex-direction: column; } .benefits-grid { grid-template-columns: 1fr; } .benefit-item { border-right: none; } }
     </style>
 </head>
 <body>
-    <div class="announcement-bar">🔥 40 FOUNDING SPOTS REMAINING - ONCE WE HIT 50, THE INNER CIRCLE CLOSES FOREVER</div>
+    <div class="announcement-bar">🔥 40 FOUNDING SPOTS REMAINING - THE INNER CIRCLE CLOSES AT 50</div>
     <div class="hero-section">
-        <h1>"It was a sweltering night in Toronto, summer 2025. The air was thick, and I said the words that would change everything: <span>'I need some throat lube.'</span>"</h1>
+        <h1>"It was a sweltering night in Toronto, summer 2025. I said the words that would change everything: <span>'I need some throat lube.'</span>"</h1>
     </div>
     <div class="main-container">
         <div class="content-left">
-            <span class="badge">COMMUNITY FUNDED &bull; INDEPENDENT &bull; UNAPOLOGETIC</span>
+            <span class="badge">COMMUNITY FUNDED &bull; INDEPENDENT</span>
             <h2>BECOME A <br><span class="gold-text">BELUBER.</span></h2>
-            <p style="font-size: 18px; color: #666; margin-top: 20px;">The beer with a dirty sense of humour.</p>
-            <p>Toronto's next independent lager is being built by <strong>50 founding members</strong>—not investors. We're reclaiming the local tap with a premium 5% lager that doesn't take itself too seriously, but takes quality dead seriously.</p>
-            
+            <p>We're building Toronto's next great lager with <strong>50 founding members</strong>—not investors. Real people who believe good beer starts with a laugh and ends with quality.</p>
             <div class="benefits-grid">
-                <div class="benefit-item"><h4>01 FOUNDER'S CAP</h4>Limited-run cap marking you as one of the original 50.</div>
-                <div class="benefit-item"><h4>02 FOUNDER'S WALL</h4>Your name etched permanently in our story. Always known.</div>
+                <div class="benefit-item"><h4>01 FOUNDER'S CAP</h4>Limited-run marking you as one of the original 50.</div>
+                <div class="benefit-item"><h4>02 FOUNDER'S WALL</h4>Your name etched permanently in the brand story.</div>
                 <div class="benefit-item"><h4>03 EARLY ACCESS</h4>First crack at every production run. Drink it first.</div>
-                <div class="benefit-item"><h4>04 INNER CIRCLE</h4>Direct line to the brand. Launch events and merch drops.</div>
+                <div class="benefit-item"><h4>04 INNER CIRCLE</h4>Direct line to the brand and exclusive launch events.</div>
                 <div class="benefit-item"><h4>05 STREET TEAM</h4>You're not just a backer—you're part of the takeover.</div>
-                <div class="benefit-item"><h4>06 MERCH & MORE</h4>Surprise drops and Beluber-only experiences.</div>
+                <div class="benefit-item"><h4>06 MERCH DROPS</h4>Surprise drops and Beluber-only member experiences.</div>
             </div>
         </div>
         <div class="sidebar-right">
-            <div>
-                <span class="badge">TORONTO &bull; ONTARIO EST. 2025</span>
-                <a href="https://www.spotfund.com/story/0000" class="price-box">CLAIM YOUR SPOT — $100</a>
-                <p style="font-size: 11px; color: #999;">ONE TIME &bull; NO SUBSCRIPTION</p>
-            </div>
-            <div style="border-top: 1px solid #eee; padding-top: 40px;">
-                <div style="font-size: 60px; font-weight: 900; color: var(--black);">10</div>
-                <span class="badge">OF 50 FOUNDING SPOTS LOCKED IN</span>
+            <span class="badge">ONTARIO EST. 2025</span>
+            <a href="https://www.spotfund.com/story/0000" class="price-box">CLAIM YOUR SPOT — $100</a>
+            <div style="border-top: 1px solid #eee; margin-top: 40px; padding-top: 40px;">
+                <div style="font-size: 50px; font-weight: 900; color: var(--black);">10</div>
+                <span class="badge">OF 50 SPOTS LOCKED IN</span>
             </div>
         </div>
     </div>
-
-    <div class="quote-section">
-        <div class="quote-text">
-            "Twenty years in Toronto hospitality taught me that the best nights start with a laugh and end with genuine connection. That’s Throat Hydration. We’re ready to bring a premium craft lager to the city with a name that makes people smile and a mission to support the independent bars that make Toronto home."
-            <br><br>
-            <span style="font-style: normal; font-weight: bold; color: var(--gold); font-size: 14px; text-transform: uppercase;">WAYNE MCAULAY — FOUNDER</span>
-        </div>
-        <div class="stats-area">
-            <div class="stat-block"><span class="stat-val">50</span><span class="stat-lab">FOUNDING BELUBERS<br>TOTAL SPOTS</span></div>
-            <div class="stat-block"><span class="stat-val">$100</span><span class="stat-lab">ONE-TIME BUY-IN<br>NO RECURRING FEES</span></div>
-            <div class="stat-block"><span class="stat-val">1</span><span class="stat-lab">INDEPENDENT LAGER<br>BUILT FOR TORONTO</span></div>
-        </div>
-    </div>
-
     <div class="black-footer-banner">
-        <div class="banner-msg">
-            <h2>DON'T WATCH.<br>OWN IT.</h2>
-            <p style="color: #666; font-size: 18px;">Every great Toronto bar has a story. This one starts with you.</p>
-        </div>
-        <div class="banner-cta">
-            <a href="https://www.spotfund.com/story/0000" class="cta-btn-final">SECURE YOUR FOUNDING SPOT →</a>
-            <p style="font-size: 10px; color: #999; margin-top: 20px; font-weight: bold;">$100 &bull; FOUNDING BELUBER &bull; TORONTO 2026</p>
-        </div>
-    </div>
-
-    <div class="footer-small">© 2026 THROAT HYDRATION INC. &bull; THROATHYDRATION.CA</div>
-</body>
-</html>
