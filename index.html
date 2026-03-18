@@ -18,10 +18,10 @@
         h2 { font-size: 65px; line-height: 0.85; margin: 10px 0; font-weight: 900; letter-spacing: -2px; }
         .gold-text { color: var(--gold); }
         .price-box { background: var(--gold); color: white; padding: 20px; font-weight: bold; text-decoration: none; display: block; border-radius: 4px; margin: 25px 0; font-size: 20px; }
-        .benefits-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid #eee; border-bottom: 1px solid #eee; margin-top: 50px; }
-        .benefit-item { padding: 40px 20px; border-right: 1px solid #eee; font-size: 13px; text-align: left; }
-        .benefit-item:last-child { border-right: none; }
-        .benefit-item h4 { text-transform: uppercase; font-size: 14px; margin-bottom: 12px; color: var(--black); font-weight: 900; }
+        .benefits-grid { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid #eee; margin-top: 50px; }
+        .benefit-item { padding: 40px 20px; border-right: 1px solid #eee; border-bottom: 1px solid #eee; font-size: 12px; text-align: left; }
+        .benefit-item:nth-child(3n) { border-right: none; }
+        .benefit-item h4 { text-transform: uppercase; font-size: 13px; margin-bottom: 12px; color: var(--black); font-weight: 900; }
         .quote-section { padding: 80px 60px; background: #fdfcfb; text-align: left; max-width: 1100px; margin: 0 auto; display: flex; border-bottom: 1px solid #eee; }
         .quote-text { flex: 1.2; padding-right: 60px; font-size: 19px; line-height: 1.6; font-style: italic; color: #444; border-right: 1px solid #eee; }
         .stats-area { flex: 0.8; padding-left: 60px; display: flex; flex-direction: column; justify-content: center; }
@@ -34,7 +34,7 @@
         .banner-cta { flex: 0.8; background: #faf8f5; padding: 80px 60px; display: flex; flex-direction: column; justify-content: center; align-items: center; }
         .cta-btn-final { border: 2px solid var(--black); padding: 20px 40px; text-decoration: none; color: var(--black); font-weight: 900; font-size: 16px; text-transform: uppercase; letter-spacing: 1px; }
         .footer-small { padding: 60px; font-size: 11px; text-transform: uppercase; color: #aaa; text-align: center; letter-spacing: 2px; }
-        @media (max-width: 800px) { .main-container, .quote-section, .black-footer-banner { flex-direction: column; } .benefit-item, .quote-text, .stats-area { border: none; padding: 40px 20px; } .benefits-grid { grid-template-columns: 1fr; } }
+        @media (max-width: 800px) { .main-container, .quote-section, .black-footer-banner { flex-direction: column; } .benefit-item { border-right: none; } .benefits-grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
@@ -47,18 +47,22 @@
             <span class="badge">COMMUNITY FUNDED &bull; INDEPENDENT &bull; UNAPOLOGETIC</span>
             <h2>BECOME A <br><span class="gold-text">BELUBER.</span></h2>
             <p style="font-size: 18px; color: #666; margin-top: 20px;">The beer with a dirty sense of humour.</p>
-            <p>Twenty years in Toronto hospitality taught me that the best nights start with a laugh. That’s Throat Hydration. We’re building this with <strong>50 founding members</strong>—real people who believe good beer shouldn't disappear.</p>
+            <p>Toronto's next independent lager is being built by <strong>50 founding members</strong>—not investors. We're reclaiming the local tap with a premium 5% lager that doesn't take itself too seriously, but takes quality dead seriously.</p>
+            
             <div class="benefits-grid">
                 <div class="benefit-item"><h4>01 FOUNDER'S CAP</h4>Limited-run cap marking you as one of the original 50.</div>
-                <div class="benefit-item"><h4>02 FOUNDER'S WALL</h4>Your name etched permanently. Always known.</div>
-                <div class="benefit-item"><h4>03 EARLY ACCESS</h4>Drink it before Toronto does. Every batch.</div>
+                <div class="benefit-item"><h4>02 FOUNDER'S WALL</h4>Your name etched permanently in our story. Always known.</div>
+                <div class="benefit-item"><h4>03 EARLY ACCESS</h4>First crack at every production run. Drink it first.</div>
+                <div class="benefit-item"><h4>04 INNER CIRCLE</h4>Direct line to the brand. Launch events and merch drops.</div>
+                <div class="benefit-item"><h4>05 STREET TEAM</h4>You're not just a backer—you're part of the takeover.</div>
+                <div class="benefit-item"><h4>06 MERCH & MORE</h4>Surprise drops and Beluber-only experiences.</div>
             </div>
         </div>
         <div class="sidebar-right">
             <div>
                 <span class="badge">TORONTO &bull; ONTARIO EST. 2025</span>
                 <a href="https://www.spotfund.com/story/0000" class="price-box">CLAIM YOUR SPOT — $100</a>
-                <p style="font-size: 11px; color: #999;">ONE TIME &bull; NO SUBSCRIPTION &bull; NO BULLSHIT</p>
+                <p style="font-size: 11px; color: #999;">ONE TIME &bull; NO SUBSCRIPTION</p>
             </div>
             <div style="border-top: 1px solid #eee; padding-top: 40px;">
                 <div style="font-size: 60px; font-weight: 900; color: var(--black);">10</div>
@@ -66,27 +70,31 @@
             </div>
         </div>
     </div>
+
     <div class="quote-section">
         <div class="quote-text">
-            "What began as a solo mission has evolved into something much bigger. We're ready to bring a premium 5% craft lager to the city with a name that makes people smile and values we take dead seriously."
+            "Twenty years in Toronto hospitality taught me that the best nights start with a laugh and end with genuine connection. That’s Throat Hydration. We’re ready to bring a premium craft lager to the city with a name that makes people smile and a mission to support the independent bars that make Toronto home."
             <br><br>
-            <span style="font-style: normal; font-weight: bold; color: var(--gold); font-size: 14px; text-transform: uppercase;">WAYNE MCAULAY — FOUNDER, THROAT HYDRATION</span>
+            <span style="font-style: normal; font-weight: bold; color: var(--gold); font-size: 14px; text-transform: uppercase;">WAYNE MCAULAY — FOUNDER</span>
         </div>
         <div class="stats-area">
             <div class="stat-block"><span class="stat-val">50</span><span class="stat-lab">FOUNDING BELUBERS<br>TOTAL SPOTS</span></div>
             <div class="stat-block"><span class="stat-val">$100</span><span class="stat-lab">ONE-TIME BUY-IN<br>NO RECURRING FEES</span></div>
+            <div class="stat-block"><span class="stat-val">1</span><span class="stat-lab">INDEPENDENT LAGER<br>BUILT FOR TORONTO</span></div>
         </div>
     </div>
+
     <div class="black-footer-banner">
         <div class="banner-msg">
             <h2>DON'T WATCH.<br>OWN IT.</h2>
-            <p style="color: #666; font-size: 18px;">This is the foundation. Now, we bring the beer.</p>
+            <p style="color: #666; font-size: 18px;">Every great Toronto bar has a story. This one starts with you.</p>
         </div>
         <div class="banner-cta">
             <a href="https://www.spotfund.com/story/0000" class="cta-btn-final">SECURE YOUR FOUNDING SPOT →</a>
-            <p style="font-size: 10px; color: #999; margin-top: 20px; font-weight: bold; letter-spacing: 1px;">$100 &bull; FOUNDING BELUBER &bull; TORONTO 2026</p>
+            <p style="font-size: 10px; color: #999; margin-top: 20px; font-weight: bold;">$100 &bull; FOUNDING BELUBER &bull; TORONTO 2026</p>
         </div>
     </div>
+
     <div class="footer-small">© 2026 THROAT HYDRATION INC. &bull; THROATHYDRATION.CA</div>
 </body>
 </html>
