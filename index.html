@@ -3,26 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Throat Hydration | Summer 2027</title>
+    <title>Become a Beluber | Throat Hydration</title>
     <style>
-        body { font-family: sans-serif; line-height: 1.6; color: #333; max-width: 800px; margin: 0 auto; padding: 40px 20px; background-color: #f9f9f9; text-align: center; }
-        .cta-button { display: inline-block; background-color: #d4af37; color: white; padding: 15px 30px; text-decoration: none; border-radius: 5px; font-weight: bold; margin-top: 20px; }
-        img { max-width: 100%; height: auto; border-radius: 8px; margin: 20px 0; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
-        .footer { margin-top: 50px; font-size: 0.9em; color: #777; border-top: 1px solid #ddd; padding-top: 20px; }
+        :root { --gold: #c5a45d; --black: #0a0a0a; --off-white: #f5f2ed; --white: #ffffff; }
+        body { font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; margin: 0; background-color: var(--off-white); color: #333; line-height: 1.6; }
+        .announcement-bar { background: #b12a1d; color: white; padding: 12px; font-size: 13px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; text-align: center; }
+        .hero-section { background: var(--black); color: var(--gold); padding: 80px 20px; text-align: center; }
+        .hero-section h1 { font-size: 32px; font-weight: 300; max-width: 800px; margin: 0 auto; line-height: 1.4; }
+        .main-container { max-width: 1100px; margin: 0 auto; display: flex; flex-wrap: wrap; background: var(--white); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .content-left { flex: 1; padding: 60px; min-width: 320px; border-right: 1px solid #eee; }
+        .sidebar-right { flex: 0.4; padding: 60px; background: #faf8f5; min-width: 280px; text-align: center; }
+        .badge { font-size: 11px; text-transform: uppercase; letter-spacing: 2px; color: #999; margin-bottom: 20px; display: block; font-weight: bold; }
+        h2 { font-size: 55px; line-height: 0.9; margin: 10px 0; font-weight: 900; letter-spacing: -1px; }
+        .gold-text { color: var(--gold); }
+        .price-box { background: var(--gold); color: white; padding: 18px; font-weight: bold; text-decoration: none; display: block; border-radius: 4px; margin: 25px 0; font-size: 18px; transition: 0.3s; }
+        .price-box:hover { background: #b08e4b; }
+        .benefits-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); border-top: 1px solid #eee; margin-top: 50px; }
+        .benefit-item { padding: 30px 20px; border-right: 1px solid #eee; font-size: 13px; text-align: left; }
+        .benefit-item:last-child { border-right: none; }
+        .benefit-item h4 { text-transform: uppercase; font-size: 14px; margin-bottom: 12px; color: var(--black); }
+        .quote-section { padding: 100px 60px; background: #fdfcfb; text-align: left; max-width: 1100px; margin: 0 auto; border-top: 1px solid #eee; }
+        .quote-text { font-size: 20px; line-height: 1.6; font-style: italic; color: #444; margin-bottom: 20px; }
+        .footer { padding: 60px; font-size: 11px; text-transform: uppercase; color: #aaa; text-align: center; letter-spacing: 1px; }
+        @media (max-width: 768px) { .main-container { flex-direction: column; } .content-left { border-right: none; border-bottom: 1px solid #eee; padding: 40px 20px; } .sidebar-right { padding: 40px 20px; } .benefits-grid { grid-template-columns: 1fr; } .benefit-item { border-right: none; border-bottom: 1px solid #eee; } }
     </style>
 </head>
 <body>
-    <h1>Become a Beluber</h1>
-    <a href="https://www.spotfund.com/story/0000" class="cta-button">CLAIM YOUR SPOT</a>
-    <hr style="margin: 40px 0; border: 0; border-top: 1px dashed #ccc;">
-    <h2>The Road to Summer 2027</h2>
-    <p>It was a sweltering night in Toronto, summer 2025. The air was thick, and I said the words that would change everything: <strong>"I need some throat lube."</strong></p>
-    <img src="hotsummer.jpg" alt="Throat Hydration Craft Lager">
-    <p>Twenty years in Toronto hospitality taught me that the best nights start with a laugh and end with genuine connection. That's Throat Hydration.</p>
-    <p>We're a premium 5% craft lager with a name that makes people smile and values we take dead seriously. The name is playful, but the commitment? That's the realest part. With rainbow lips on every can—not just in June—we are Toronto-born, not a corporate import.</p>
-    <p>Enjoy the beer, enjoy the laughs. Cheers, to many more.</p>
-    <div class="footer">
-        &copy; 2026 Throat Hydration. Toronto, Ontario.
+
+    <div class="announcement-bar">🔥 40 FOUNDING SPOTS REMAINING - ONCE WE HIT 50, THE INNER CIRCLE CLOSES FOREVER</div>
+
+    <div class="hero-section">
+        <h1>Some businesses start with investors. Some start with suits in boardrooms. <br><span style="color:white;">This one started with a man, a mission, and a name that made Ontario pause.</span></h1>
     </div>
+
+    <div class="main-container">
+        <div class="content-left">
+            <span class="badge">COMMUNITY FUNDED &bull; INDEPENDENT &bull; UNAPOLOGETIC</span>
+            <h2>BECOME A <span class="gold-text">BELUBER.</span></h2>
+            <p style="font-size: 18px; color: #666;">The beer with a dirty sense of humour.</p>
+            <p>Toronto's next independent lager is being built by <strong>50 founding members</strong>—not investors. Real people who believe good beer shouldn't disappear from local taps. <strong>$100 gets you in before the doors close.</strong></p>
+            
+            <div class="benefits-grid">
+                <div class="benefit-item"><h4>01 FOUNDER'S CAP</h4>Limited-run cap marking you as one of the original 50. Not available to the public. Ever.</div>
+                <div class="benefit-item"><h4>02 FOUNDER'S WALL</h4>Your name etched permanently. The people who made this happen will always be known.</div>
+                <div class="benefit-item"><h4>03 EARLY ACCESS</h4>First crack at every production run before shelves. You drink it before Toronto does.</div>
+            </div>
+        </div>
+
+        <div class="sidebar-right">
+            <span class="badge">TORONTO &bull; ONTARIO EST. 2025</span>
+            <a href="https://www.spotfund.com/story/0000" class="price-box">CLAIM YOUR SPOT — $100</a>
+            <p style="font-size: 11px; color: #999;">ONE TIME &bull; NO SUBSCRIPTION &bull; NO BULLSHIT</p>
+            <hr style="border: 0; border-top: 1px solid #eee; margin: 30px 0;">
+            <div style="font-size: 50px; font-weight: bold; color: var(--black);">10</div>
+            <span class="badge">OF 50 FOUNDING SPOTS LOCKED IN</span>
+        </div>
+    </div>
+
+    <div class="quote-section">
+        <div class="quote-text">"What began as a solo mission to change how we think about independent beer has evolved into something much bigger... we're ready to bring Throat Lube Lager to the city."</div>
+        <span style="font-size: 13px; font-weight: bold; color: var(--gold); text-transform: uppercase;">WAYNE MCAULAY — FOUNDER, THROAT HYDRATION</span>
+    </div>
+
+    <div class="footer">
+        &copy; 2026 THROAT HYDRATION INC. &bull; ONTARIO, CANADA &bull; THROATHYDRATION.CA
+    </div>
+
 </body>
 </html>
